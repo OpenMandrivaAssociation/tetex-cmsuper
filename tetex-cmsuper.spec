@@ -9,12 +9,14 @@ Release:	%mkrel 8
 License:	GPL
 Group:		Publishing
 Source0:	ftp://ftp.dante.de/pub/tex/fonts/ps-type1/cm-super.tar.bz2
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 BuildArch:	noarch
-PreReq:		tetex >= 3.0
+Requires(post): tetex >= 3.0
+Requires(preun): tetex >= 3.0
+Requires(postun): tetex >= 3.0
 Requires:	tetex-dvips >= 3.0
 Requires:	tetex-dvipdfm >= 3.0
 Requires:	ghostscript
+BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
 The CM-Super package contains Type 1 fonts converted from METAFONT
@@ -129,5 +131,3 @@ exit 0
 %{texmfdir}/fonts/map/dvips/cm-super/*
 %{texmfdir}/fonts/afm/public/cm-super/*.afm
 %{texmfdir}/fonts/type1/public/cm-super/*.pfb
-
-
