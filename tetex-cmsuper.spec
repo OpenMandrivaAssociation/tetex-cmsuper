@@ -16,6 +16,7 @@ Requires(postun): tetex >= 3.0
 Requires:	tetex-dvips >= 3.0
 Requires:	tetex-dvipdfm >= 3.0
 Requires:	ghostscript
+BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
 The CM-Super package contains Type 1 fonts converted from METAFONT
