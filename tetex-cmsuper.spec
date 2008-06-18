@@ -5,7 +5,7 @@
 Summary:	The CM-Super font set
 Name:		%{name}
 Version:	%{version}
-Release:	%mkrel 9
+Release:	%mkrel 10
 License:	GPL
 Group:		Publishing
 Source0:	ftp://ftp.dante.de/pub/tex/fonts/ps-type1/cm-super.tar.bz2
