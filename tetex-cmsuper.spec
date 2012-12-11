@@ -5,7 +5,7 @@
 Summary:	The CM-Super font set
 Name:		%{name}
 Version:	%{version}
-Release:	%mkrel 11
+Release:	%mkrel 10
 License:	GPL
 Group:		Publishing
 Source0:	ftp://ftp.dante.de/pub/tex/fonts/ps-type1/cm-super.tar.bz2
@@ -131,3 +131,46 @@ exit 0
 %{texmfdir}/fonts/map/dvips/cm-super/*
 %{texmfdir}/fonts/afm/public/cm-super/*.afm
 %{texmfdir}/fonts/type1/public/cm-super/*.pfb
+
+
+%changelog
+* Wed Jun 18 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.3.3-10mdv2009.0
++ Revision: 225674
+- rebuild
+
+* Wed Feb 06 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.3.3-9mdv2008.1
++ Revision: 162905
+- rebuild because of missing i586 package
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Wed Aug 29 2007 Oden Eriksson <oeriksson@mandriva.com> 0.3.3-8mdv2008.0
++ Revision: 74248
+- fix prereq-use
+
+
+* Sun Feb 18 2007 Giuseppe GhibÃ² <ghibo@mandriva.com> 0.3.3-8mdv2007.0
++ Revision: 122326
+- Rebuilt.
+
+* Sun Feb 18 2007 Giuseppe GhibÃ² <ghibo@mandriva.com> 0.3.3-7mdv2007.1
++ Revision: 122301
+- Import tetex-cmsuper
+
+* Fri Sep 15 2006 Giuseppe Ghibò <ghibo@mandriva.com> 0.3.3-7mdv2007.0
+- force exit 0 to triggers.
+
+* Fri Sep 08 2006 Giuseppe Ghibò <ghibo@mandriva.com> 0.3.3-6mdv2007.0
+- Added trigger for rebuilding the updmap when the package tetex is updated.
+
+* Fri Feb 18 2005 Giuseppe Ghibò <ghibo@mandrakesoft.com> 0.3.3-5mdk
+- Fixed bug #13756.
+
+* Wed Feb 16 2005 Giuseppe Ghibò <ghibo@mandrakesoft.com> 0.3.3-4mdk
+- Changed .map|.enc path for tetex-3.0.
+
+* Sat Feb 28 2004 Giuseppe Ghibò <ghibo@mandrakesoft.com> 0.3.3-3mdk
+- Added tetex in PreReq.
+
